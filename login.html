@@ -1,0 +1,22 @@
+<h3>Login</h3>
+<form name="loginform" action="index.php?p=8" method="post">
+<table>
+<tr>
+	<td align="right">Login as</td>
+	<td>
+		<select onchange="changeform(this)" name="type">
+			<option selected="selected" value="user">Customer</option>
+			<option value="admin">Admin</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td align="right">Username</td><td><input type="text" name="uname" /></td>
+</tr>
+<tr>
+	<td align="right">Password</td><td><input type="password" name="passwd" /></td>
+</tr>
+</table>
+
+<input type="submit" />
+</form>

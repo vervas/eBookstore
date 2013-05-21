@@ -1,0 +1,28 @@
+<h3>Sign Up</h3>
+<form onSubmit="return validateForm()" name="signup" action="index.php?p=15" method="post">
+<table>
+<tr>
+	<td align="right">First Name</td><td><input type="text" name="Fname" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Last Name</td><td><input type="text" name="Lname" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Address</td><td><input type="text" name="Address" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Phone</td><td><input type="text" name="Phone" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Username</td><td><input onblur="checkUsername(this)" type="text" name="uname" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Password</td><td><input type="password" name="passwd" onchange="removeError(this)"/></td>
+</tr>
+<tr>
+	<td align="right">Retype Password</td><td><input type="password" name="passwd" onchange="removeError(this)"/></td>
+</tr>
+</table>
+<input value="Submit" type="submit" />
+
+</form>
